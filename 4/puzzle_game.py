@@ -158,14 +158,24 @@ class PuzzleGame:
         return self.board.__eq__(self.board_with_final_state)
 
     def get_tile(self, line, column):
+        # [0] Entrada: line, column
+        print(f"[0] Entrada: get_tile({line}, {column})")
         if line > 0 and line <= self.board.number_of_lines and \
                 column > 0 and column <= self.board.number_of_columns:
+            # [1] Posicao valida
+            print(f"[1] Posição válida ({line}, {column})")
             if line == self.line_of_empty_position and \
                 column == self.column_of_empty_position:
+                # [3] Caminho 0 -> 1 -> 3: retorna espaco (posicao vazia)
+                print(f"[3] Posição é a vazia - retornando espaço")
                 return (" ")
             else:
+                # [4] Caminho 0 -> 1 -> 4: retorna tile do board
+                print(f"[4] Posição válida mas não é vazia - retornando tile do board")
                 return self.board.get_tile(line, column)
         else:
+            # [2] Caminho 0 -> 2: posicao invalida
+            print(f"[2] Posição inválida ({line}, {column}) - lançando exceção")
             raise InvalidPositionException()
 
     def __str__(self):

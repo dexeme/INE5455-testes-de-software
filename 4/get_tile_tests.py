@@ -21,12 +21,9 @@ class GetTileTests(unittest.TestCase):
         game = PuzzleGame(3)
         game.shuffle(TestingShufflerPuzzleGame3x3To1X3425786())
 
-        # Estado esperado do shuffler:
-        # 1  -  3
-        # 4  2  5
-        # 7  8  6
         self.assertEqual((1, 2), (game.line_of_empty_position, game.column_of_empty_position))
         self.assertEqual(1, game.get_tile(1, 1))
+        print()
 
     def test_path_1_2_4_returns_empty_string_for_empty_position(self):
         # [0] -> [1] -> [3]
@@ -34,6 +31,7 @@ class GetTileTests(unittest.TestCase):
         game.shuffle(TestingShufflerPuzzleGame3x3To1X3425786())
 
         self.assertEqual(" ", game.get_tile(game.line_of_empty_position, game.column_of_empty_position))
+        print()
 
     def test_path_1_3_raises_invalid_position_exception(self):
         # [0] -> [2]
@@ -42,3 +40,4 @@ class GetTileTests(unittest.TestCase):
 
         with self.assertRaises(InvalidPositionException):
             game.get_tile(0, 1)
+        print()
