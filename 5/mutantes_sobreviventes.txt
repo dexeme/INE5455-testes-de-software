@@ -1,0 +1,96 @@
+Mutante 1
+Trocou "and" por "or" na verificação da posição da célula no tabuleiro
+Pode ser identificado por um caso de teste no qual a linha está dentro do tabuleiro mas a coluna está fora
+# conteudo.puzzle_game.xǁPuzzleGameǁget_tile__mutmut_2: survived
+--- conteudo/puzzle_game.py
++++ conteudo/puzzle_game.py
+@@ -1,6 +1,5 @@
+ def get_tile(self, line, column):
+-    if line > 0 and line <= self.board.number_of_lines and \
+-                column > 0 and column <= self.board.number_of_columns:
++    if line > 0 and line <= self.board.number_of_lines or column > 0 and column <= self.board.number_of_columns:
+         if line == self.line_of_empty_position and \
+                 column == self.column_of_empty_position:
+             return (" ")
+
+Mutante 2
+Mesma coisa do mutante 1
+# conteudo.puzzle_game.xǁPuzzleGameǁget_tile__mutmut_3: survived
+--- conteudo/puzzle_game.py
++++ conteudo/puzzle_game.py
+@@ -1,5 +1,5 @@
+ def get_tile(self, line, column):
+-    if line > 0 and line <= self.board.number_of_lines and \
++    if line > 0 or line <= self.board.number_of_lines and \
+                 column > 0 and column <= self.board.number_of_columns:
+         if line == self.line_of_empty_position and \
+                 column == self.column_of_empty_position:
+
+Mutante 3
+Trocou "line > 0" por "line >= 0" na verificação de posição no tabuleiro.
+Pode ser identificado ao adicionar um caso de teste buscando o tabuleiro na posição 0
+# conteudo.puzzle_game.xǁPuzzleGameǁget_tile__mutmut_4: survived
+--- conteudo/puzzle_game.py
++++ conteudo/puzzle_game.py
+@@ -1,5 +1,5 @@
+ def get_tile(self, line, column):
+-    if line > 0 and line <= self.board.number_of_lines and \
++    if line >= 0 and line <= self.board.number_of_lines and \
+                 column > 0 and column <= self.board.number_of_columns:
+         if line == self.line_of_empty_position and \conteudo.puzzle_game.xǁPuzzleGameǁget_tile__mutmut_10
+                 column == self.column_of_empty_position:
+
+Mutante 4
+Mudou
+# conteudo.puzzle_game.xǁPuzzleGameǁget_tile__mutmut_6: survived
+--- conteudo/puzzle_game.py
++++ conteudo/puzzle_game.py
+@@ -1,5 +1,5 @@
+ def get_tile(self, line, column):
+-    if line > 0 and line <= self.board.number_of_lines and \
++    if line > 0 and line < self.board.number_of_lines and \
+                 column > 0 and column <= self.board.number_of_columns:
+         if line == self.line_of_empty_position and \
+                 column == self.column_of_empty_position:
+
+Mutante 5
+# conteudo.puzzle_game.xǁPuzzleGameǁget_tile__mutmut_7: survived
+--- conteudo/puzzle_game.py
++++ conteudo/puzzle_game.py
+@@ -1,6 +1,6 @@
+ def get_tile(self, line, column):
+     if line > 0 and line <= self.board.number_of_lines and \
+-                column > 0 and column <= self.board.number_of_columns:
++                column >= 0 and column <= self.board.number_of_columns:
+         if line == self.line_of_empty_position and \
+                 column == self.column_of_empty_position:
+             return (" ")
+
+
+Mutante 6
+# conteudo.puzzle_game.xǁPuzzleGameǁget_tile__mutmut_9: survived
+--- conteudo/puzzle_game.py
++++ conteudo/puzzle_game.py
+@@ -1,6 +1,6 @@
+ def get_tile(self, line, column):
+     if line > 0 and line <= self.board.number_of_lines and \
+-                column > 0 and column <= self.board.number_of_columns:
++                column > 0 and column < self.board.number_of_columns:
+         if line == self.line_of_empty_position and \
+                 column == self.column_of_empty_position:
+             return (" ")
+
+Mutante 7
+# conteudo.puzzle_game.xǁPuzzleGameǁget_tile__mutmut_10: survived
+--- conteudo/puzzle_game.py
++++ conteudo/puzzle_game.py
+@@ -1,8 +1,7 @@
+ def get_tile(self, line, column):
+     if line > 0 and line <= self.board.number_of_lines and \
+                 column > 0 and column <= self.board.number_of_columns:
+-        if line == self.line_of_empty_position and \
+-                column == self.column_of_empty_position:
++        if line == self.line_of_empty_position or column == self.column_of_empty_position:
+             return (" ")
+         else:
+             return self.board.get_tile(line, column)
