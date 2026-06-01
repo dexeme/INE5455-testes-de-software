@@ -44,7 +44,7 @@ class TesteMockParte1(unittest.TestCase):
 
 class TesteMockParte2(unittest.TestCase):
     def test_end_of_game_not_finished(self):
-        game = PuzzleGameWithPlayer(3, "William")
+        game = PuzzleGameWithPlayer(3, "Tiago")
         TestingShufflerPuzzleGame3x3To12345X786().shuffle(game)
 
         resultado = game.end_of_the_game()
@@ -52,7 +52,7 @@ class TesteMockParte2(unittest.TestCase):
         self.assertEqual(resultado, "Game not finished")
 
     def test_end_of_game_saved(self):
-        game = PuzzleGameWithPlayer(3, "William")
+        game = PuzzleGameWithPlayer(3, "Tiago")
         TestingShufflerPuzzleGame3x3To12345X786().shuffle(game)
         game.move_tile(6)
 
@@ -62,7 +62,7 @@ class TesteMockParte2(unittest.TestCase):
 
     @patch("puzzle_game_with_mock.PuzzleGameWithPlayer.save_game_to_file")
     def test_end_of_game_not_finished_mock(self, mock_save_game_to_file):
-        game = PuzzleGameWithPlayer(3, "William")
+        game = PuzzleGameWithPlayer(3, "Tiago")
         TestingShufflerPuzzleGame3x3To12345X786().shuffle(game)
         mock_save_game_to_file.return_value = "Saved"
 
@@ -72,7 +72,7 @@ class TesteMockParte2(unittest.TestCase):
 
     @patch("puzzle_game_with_mock.PuzzleGameWithPlayer.save_game_to_file")
     def test_end_of_game_saved_mock(self, mock_save_game_to_file):
-        game = PuzzleGameWithPlayer(3, "William")
+        game = PuzzleGameWithPlayer(3, "Tiago")
         TestingShufflerPuzzleGame3x3To12345X786().shuffle(game)
         game.move_tile(6)
         mock_save_game_to_file.return_value = "Saved"

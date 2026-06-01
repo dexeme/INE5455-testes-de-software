@@ -1,13 +1,4 @@
-# Mutantes Sobreviventes — Análise
-
-Todos os 5 mutantes estão no método `get_tile` de `conteudo/puzzle_game.py`.
-
-**Causa raiz comum:** a classe `GetTileTests` estava definida *dentro* de `TestMoveTileBranchCoverage`
-(classe aninhada). O pytest não descobre classes `unittest.TestCase` aninhadas, portanto nenhum
-dos testes de `get_tile` era executado. Os mutantes sobreviviam porque a suíte nem exercitava o
-método com asserts de fronteira.
-
----
+# Mutantes Sobreviventes
 
 ### Mutante 1
 
