@@ -58,11 +58,11 @@
         },
         {
           "id": "58ff3769-f23a-48f8-99f5-092be32bbf2f",
-          "comment": "Verifica se a busca feita foi por Tiago.",
+          "comment": "Verifica se a busca feita foi por Tiago Faustino de Siqueira.",
           "command": "assert",
           "target": "termoBuscado",
           "targets": [],
-          "value": "Tiago"
+          "value": "Tiago Faustino de Siqueira"
         }
       ]
     }
