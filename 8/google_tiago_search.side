@@ -1,0 +1,86 @@
+{
+  "id": "d64bb471-3e60-4cd8-a5c3-e37a4f93ee98",
+  "version": "2.0",
+  "name": "google_tiago_search",
+  "url": "https://www.google.com",
+  "tests": [
+    {
+      "id": "f361bff8-3e1e-4de7-9c8a-f54275d4df97",
+      "name": "procura_tiago_no_google",
+      "commands": [
+        {
+          "id": "abf44a66-24f8-4948-aa7d-eb6c9af99940",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b61349ea-df78-4b36-91c7-71f732426665",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1366x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4d166c10-b807-4349-b36f-03d354d8defc",
+          "comment": "Aceita o banner de consentimento quando ele aparece.",
+          "command": "runScript",
+          "target": "const labels = ['Aceitar tudo', 'Accept all']; const buttons = [...document.querySelectorAll('button')]; const button = buttons.find(b => labels.some(label => b.innerText.includes(label))); if (button) button.click();",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ed3d3250-410c-44d1-a35c-92d70aef76c3",
+          "comment": "Preenche a busca via JavaScript para evitar falha do comando type no Google atual.",
+          "command": "runScript",
+          "target": "const q = document.querySelector('textarea[name=\\\"q\\\"], input[name=\\\"q\\\"]'); q.focus(); q.value = 'Tiago Faustino de Siqueira'; q.dispatchEvent(new Event('input', { bubbles: true }));",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b311da01-00a6-46c0-a2ad-26e31d392963",
+          "comment": "Envia o formulário de busca.",
+          "command": "runScript",
+          "target": "document.querySelector('form[action=\\\"/search\\\"], form').submit();",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "dac44bee-6a3e-4596-8172-045839aaea12",
+          "comment": "Lê o termo buscado da página de resultados.",
+          "command": "executeScript",
+          "target": "return document.querySelector('textarea[name=\\\"q\\\"], input[name=\\\"q\\\"]')?.value || new URLSearchParams(location.search).get('q');",
+          "targets": [],
+          "value": "termoBuscado"
+        },
+        {
+          "id": "58ff3769-f23a-48f8-99f5-092be32bbf2f",
+          "comment": "Verifica se a busca feita foi por Tiago.",
+          "command": "assert",
+          "target": "termoBuscado",
+          "targets": [],
+          "value": "Tiago"
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "05cda87f-3a5f-4449-810c-1e0a0d70464b",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "f361bff8-3e1e-4de7-9c8a-f54275d4df97"
+      ]
+    }
+  ],
+  "urls": [
+    "https://www.google.com/"
+  ],
+  "plugins": []
+}

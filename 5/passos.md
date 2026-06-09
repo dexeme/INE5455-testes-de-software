@@ -109,10 +109,3 @@ Resultado:
 ```
 
 Os 5 mutantes analisados foram mortos.
-
-Resumo:
-
-| Cenário | Pytest | Mutmut |
-|---------|--------|--------|
-| Antes | 5 testes passando | 25 sobreviventes |
-| Depois | 13 testes passando | 6 sobreviventes |

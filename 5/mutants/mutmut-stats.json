@@ -1,62 +1,143 @@
 {
     "tests_by_mangled_function_name": {
-        "conteudo.puzzle_game.x\u01c1PuzzleGame\u01c1__put_tiles_in_the_board__": [
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_3_5_second_condition_false",
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_3_4_second_condition_true",
-            "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_returns_false",
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_5_first_condition_false",
-            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_returns_true"
-        ],
-        "conteudo.puzzle_game.x\u01c1PuzzleGame\u01c1__put_tiles_in_dic_positions__": [
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_3_5_second_condition_false",
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_3_4_second_condition_true",
-            "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_returns_false",
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_5_first_condition_false",
-            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_returns_true"
-        ],
-        "conteudo.puzzle_game.x\u01c1PuzzleGame\u01c1__generate_list_of_tiles__": [
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_3_5_second_condition_false",
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_3_4_second_condition_true",
-            "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_returns_false",
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_5_first_condition_false",
-            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_returns_true"
-        ],
-        "conteudo.puzzle_game.x\u01c1PuzzleGame\u01c1get_tile": [
-            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_returns_true"
-        ],
         "conteudo.puzzle_game.x\u01c1PuzzleGame\u01c1__init__": [
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_3_5_second_condition_false",
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_3_4_second_condition_true",
             "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_returns_false",
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_5_first_condition_false",
-            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_returns_true"
-        ],
-        "conteudo.puzzle_game.x\u01c1PuzzleGame\u01c1shuffle": [
-            "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_returns_false",
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_3_5_second_condition_false",
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_3_4_second_condition_true",
-            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_returns_true"
+            "tests/test_old.py::ClasseTestes::test_path_1_3_raises_invalid_position_exception",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryLine::test_get_tile_last_valid_line_returns_tile",
+            "tests/test_old.py::ClasseTestes::test_path_1_2_4_returns_empty_string_for_empty_position",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_same_column_different_line_returns_tile_not_space",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_returns_true",
+            "tests/test_old.py::ClasseTestes::test_path_1_2_5_returns_board_tile",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_same_line_different_column_returns_tile_not_space",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryLine::test_get_tile_line_above_board_raises_invalid_position",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_5_second_condition_false",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_first_condition_false",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryColumn::test_get_tile_column_zero_raises_invalid_position",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_second_condition_true",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryColumn::test_get_tile_first_valid_column_returns_tile",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryLine::test_get_tile_line_zero_raises_invalid_position",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_at_empty_position_returns_space"
         ],
         "conteudo.puzzle_game.x\u01c1PuzzleGame\u01c1move_tile_from_a_position_to_the_empty_position": [
             "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_returns_false",
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_3_5_second_condition_false",
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_3_4_second_condition_true",
-            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_returns_true"
+            "tests/test_old.py::ClasseTestes::test_path_1_2_4_returns_empty_string_for_empty_position",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_returns_true",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_same_column_different_line_returns_tile_not_space",
+            "tests/test_old.py::ClasseTestes::test_path_1_2_5_returns_board_tile",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_same_line_different_column_returns_tile_not_space",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_5_second_condition_false",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_second_condition_true",
+            "tests/test_old.py::ClasseTestes::test_path_1_3_raises_invalid_position_exception",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_at_empty_position_returns_space"
+        ],
+        "conteudo.puzzle_game.x\u01c1PuzzleGame\u01c1__put_tiles_in_the_board__": [
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_returns_false",
+            "tests/test_old.py::ClasseTestes::test_path_1_3_raises_invalid_position_exception",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryLine::test_get_tile_last_valid_line_returns_tile",
+            "tests/test_old.py::ClasseTestes::test_path_1_2_4_returns_empty_string_for_empty_position",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_same_column_different_line_returns_tile_not_space",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_returns_true",
+            "tests/test_old.py::ClasseTestes::test_path_1_2_5_returns_board_tile",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_same_line_different_column_returns_tile_not_space",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryLine::test_get_tile_line_above_board_raises_invalid_position",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_5_second_condition_false",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_first_condition_false",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryColumn::test_get_tile_column_zero_raises_invalid_position",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_second_condition_true",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryColumn::test_get_tile_first_valid_column_returns_tile",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryLine::test_get_tile_line_zero_raises_invalid_position",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_at_empty_position_returns_space"
+        ],
+        "conteudo.puzzle_game.x\u01c1PuzzleGame\u01c1__generate_list_of_tiles__": [
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_returns_false",
+            "tests/test_old.py::ClasseTestes::test_path_1_3_raises_invalid_position_exception",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryLine::test_get_tile_last_valid_line_returns_tile",
+            "tests/test_old.py::ClasseTestes::test_path_1_2_4_returns_empty_string_for_empty_position",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_same_column_different_line_returns_tile_not_space",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_returns_true",
+            "tests/test_old.py::ClasseTestes::test_path_1_2_5_returns_board_tile",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_same_line_different_column_returns_tile_not_space",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryLine::test_get_tile_line_above_board_raises_invalid_position",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_5_second_condition_false",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_first_condition_false",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryColumn::test_get_tile_column_zero_raises_invalid_position",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_second_condition_true",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryColumn::test_get_tile_first_valid_column_returns_tile",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryLine::test_get_tile_line_zero_raises_invalid_position",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_at_empty_position_returns_space"
+        ],
+        "conteudo.puzzle_game.x\u01c1PuzzleGame\u01c1get_tile": [
+            "tests/test_old.py::ClasseTestes::test_path_1_3_raises_invalid_position_exception",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryLine::test_get_tile_last_valid_line_returns_tile",
+            "tests/test_old.py::ClasseTestes::test_path_1_2_4_returns_empty_string_for_empty_position",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_same_column_different_line_returns_tile_not_space",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_returns_true",
+            "tests/test_old.py::ClasseTestes::test_path_1_2_5_returns_board_tile",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_same_line_different_column_returns_tile_not_space",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryLine::test_get_tile_line_above_board_raises_invalid_position",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryColumn::test_get_tile_column_zero_raises_invalid_position",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryColumn::test_get_tile_first_valid_column_returns_tile",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryLine::test_get_tile_line_zero_raises_invalid_position",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_at_empty_position_returns_space"
         ],
         "conteudo.puzzle_game.x\u01c1PuzzleGame\u01c1move_tile": [
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_3_5_second_condition_false",
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_3_4_second_condition_true",
             "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_returns_false",
-            "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_5_first_condition_false",
-            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_returns_true"
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_second_condition_true",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_returns_true",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_first_condition_false",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_5_second_condition_false"
+        ],
+        "conteudo.puzzle_game.x\u01c1PuzzleGame\u01c1__put_tiles_in_dic_positions__": [
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_returns_false",
+            "tests/test_old.py::ClasseTestes::test_path_1_3_raises_invalid_position_exception",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryLine::test_get_tile_last_valid_line_returns_tile",
+            "tests/test_old.py::ClasseTestes::test_path_1_2_4_returns_empty_string_for_empty_position",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_same_column_different_line_returns_tile_not_space",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_returns_true",
+            "tests/test_old.py::ClasseTestes::test_path_1_2_5_returns_board_tile",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_same_line_different_column_returns_tile_not_space",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryLine::test_get_tile_line_above_board_raises_invalid_position",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_5_second_condition_false",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_first_condition_false",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryColumn::test_get_tile_column_zero_raises_invalid_position",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_second_condition_true",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryColumn::test_get_tile_first_valid_column_returns_tile",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryLine::test_get_tile_line_zero_raises_invalid_position",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_at_empty_position_returns_space"
+        ],
+        "conteudo.puzzle_game.x\u01c1PuzzleGame\u01c1shuffle": [
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_returns_false",
+            "tests/test_old.py::ClasseTestes::test_path_1_2_4_returns_empty_string_for_empty_position",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_returns_true",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_same_column_different_line_returns_tile_not_space",
+            "tests/test_old.py::ClasseTestes::test_path_1_2_5_returns_board_tile",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_same_line_different_column_returns_tile_not_space",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_5_second_condition_false",
+            "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_second_condition_true",
+            "tests/test_old.py::ClasseTestes::test_path_1_3_raises_invalid_position_exception",
+            "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_at_empty_position_returns_space"
         ]
     },
     "duration_by_test": {
-        "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_returns_true": 0.0007845090003684163,
-        "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_returns_false": 0.0005709050165023655,
-        "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_3_4_second_condition_true": 0.00036471999919740483,
-        "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_3_5_second_condition_false": 0.0002818449938786216,
-        "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_5_first_condition_false": 0.0002935919983428903
+        "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_returns_true": 0.0004950369911966845,
+        "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_returns_false": 0.00036898099642712623,
+        "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_3_4_second_condition_true": 0.0003515919961500913,
+        "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_3_5_second_condition_false": 0.0002720689954003319,
+        "tests/test_old.py::TestMoveTileBranchCoverage::test_path_0_1_2_5_first_condition_false": 0.00034583499655127525,
+        "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryColumn::test_get_tile_column_zero_raises_invalid_position": 0.0007292129885172471,
+        "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_at_empty_position_returns_space": 0.0005431890022009611,
+        "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryLine::test_get_tile_last_valid_line_returns_tile": 0.00042822900286410004,
+        "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryColumn::test_get_tile_first_valid_column_returns_tile": 0.0003556540032150224,
+        "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_same_column_different_line_returns_tile_not_space": 0.0003319130191812292,
+        "tests/test_get_tile_mutant_killers.py::TestGetTileEmptyPosition::test_get_tile_same_line_different_column_returns_tile_not_space": 0.00032989300962071866,
+        "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryLine::test_get_tile_line_above_board_raises_invalid_position": 0.0003546150110196322,
+        "tests/test_get_tile_mutant_killers.py::TestGetTileBoundaryLine::test_get_tile_line_zero_raises_invalid_position": 0.0003009469946846366,
+        "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_4_second_condition_true": 0.0008831400191411376,
+        "tests/test_old.py::ClasseTestes::test_path_1_2_4_returns_empty_string_for_empty_position": 0.00041779402818065137,
+        "tests/test_old.py::ClasseTestes::test_path_1_2_5_returns_board_tile": 0.0005235850112512708,
+        "tests/test_old.py::ClasseTestes::test_path_0_1_2_5_first_condition_false": 0.0003864339960273355,
+        "tests/test_old.py::ClasseTestes::test_path_0_1_2_3_5_second_condition_false": 0.000335652002831921,
+        "tests/test_old.py::ClasseTestes::test_path_1_3_raises_invalid_position_exception": 0.000826667994260788
     },
-    "stats_time": 0.38427577399999996
+    "stats_time": 0.31471045000000003
 }

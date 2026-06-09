@@ -1,5 +1,13 @@
 # Mutantes Sobreviventes
 
+```
+line > 0 → line >= 0
+line <= N → line < N
+column > 0 → column >= 0
+line == empty_line → line != empty_line
+return (" ") → return ("XX XX")
+```
+
 ### Mutante 1
 
 Trocou `line > 0` por `line >= 0` na verificação de posição válida em `get_tile`.
